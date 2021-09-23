@@ -1,0 +1,648 @@
+#VRML V2.0 utf8
+
+
+
+
+
+##mesa
+
+DEF	escalones Transform {
+	children [
+	DEF table Transform {
+	scale 4 0.1 1
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .79 .25 0
+					specularColor .63 .19 .03
+					ambientIntensity .0867
+					shininess .55
+				}
+			
+			}
+			geometry Box{}
+		}
+	]
+}
+
+
+Transform {
+	translation	0 2 -2
+	children [
+	USE	table 
+	]
+}
+
+Transform {
+
+	rotation 1 0 0 1.57
+	translation	0 1 -1
+	children [
+	USE	table 
+	]
+}
+
+Transform {
+
+	rotation 1 0 0 1.57
+	translation	0 3 -3
+	children [
+	USE	table 
+	]
+}
+
+	Transform {
+	translation	0 4 -4
+	children [
+	USE	table 
+	]
+}
+	]
+}
+
+Transform {
+	translation	0 4 -4
+	children [
+	USE	escalones
+	]
+}
+
+
+
+
+#velas
+
+
+DEF	vela Transform {
+	translation	0 0 0
+	children [
+	Transform {
+	translation	-3 1 0
+	scale 0.2 1 0.2
+	children [
+	
+		Shape {
+			appearance Appearance {
+				texture	ImageTexture {
+								 url"https://thumbs.dreamstime.com/b/textura-blanca-de-la-cera-38876071.jpg"
+				}
+			
+			}
+			geometry Cylinder {
+			
+			}
+		}
+	]
+}
+
+	Transform {
+	translation	-3 2 0
+	scale 0.1 0.3 0.1
+	children [
+	
+		Shape {
+			appearance Appearance {
+				texture	ImageTexture {
+				url	"https://thumbs.dreamstime.com/b/textura-de-la-cera-de-la-abeja-44626508.jpg"
+				}
+			
+			}
+			geometry Cylinder {
+			
+			}
+		}
+	]
+}
+	]
+}
+
+
+Transform {
+	translation	3 0 0
+	children [
+	USE	vela
+	]
+}
+Transform {
+	translation	6 0 0
+	children [
+	USE	vela
+	]
+}
+
+
+Transform {
+	translation	6 2 -2
+	children [
+	USE	vela
+	]
+}
+  Transform {
+	translation	3 2 -2
+	children [
+	USE	vela
+	]
+}
+ Transform {
+	translation	0 2 -2
+	children [
+	USE	vela
+	]
+}
+
+Transform {
+	translation	3 8 -8
+	children [
+	USE	vela
+	]
+}
+Transform {
+	translation	0 8 -8
+	children [
+	USE	vela
+	]
+}
+Transform {
+	translation	6 8 -8
+	children [
+	USE	vela
+	]
+}
+#fotografia
+
+Transform {
+	scale 0.8 1.4 0.1
+	translation	0 5.2 -4.1
+	rotation 1 0 0 -0.78
+	children [
+		Shape {
+			appearance Appearance {
+				texture	ImageTexture {
+							url	"https://computerworldmexico.com.mx/wp-content/uploads/2013/09/27101.jpeg"
+				}
+			}
+			geometry Box {
+			
+			}
+		}
+			
+	]
+}
+
+
+#dulces
+ Transform {
+	scale 1 0.1	0.8
+	translation	0 6.2 -6
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0
+					shininess 0
+				}
+			
+			}
+			geometry Sphere {
+			
+			}
+		}
+			
+	]
+}
+		 Transform {
+	scale 1 0.1	0.8
+	translation	3 6.2 -6
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0
+					shininess 0
+				}
+			
+			}
+			geometry Sphere {
+			
+			}
+		}
+			
+	]
+}
+		 Transform {
+	scale 1 0.1	0.8
+	translation	-3 6.2 -6
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0
+					shininess 0
+				}
+			
+			}
+			geometry Sphere {
+			
+			}
+		}
+			
+	]
+}
+DEF	papelPicado Transform {
+	children [
+	  Transform {
+	scale 0.1 1 1
+	translation	-4 1 -2
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					specularColor .29 .3 .29
+					ambientIntensity 0
+					shininess .08
+					transparency 0
+				}
+				texture	ImageTexture {
+				url	"https://www.pngkey.com/png/full/105-1058930_papel-picado-banner-png-papel-picado-dia-de.png"
+				}
+				
+			
+			}
+			geometry Box {
+			
+			}
+		}
+			
+	]
+}
+  Transform {
+	scale 0.1 1 1
+	translation	-4 3 -4
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					specularColor .29 .3 .29
+					ambientIntensity 0
+					shininess .08
+					transparency 0
+				}
+				texture	ImageTexture {
+				url	"https://www.pngkey.com/png/full/105-1058930_papel-picado-banner-png-papel-picado-dia-de.png"
+				}
+				
+			
+			}
+			geometry Box {
+			
+			}
+		}
+			
+	]
+}
+
+
+ Transform {
+	scale 0.1 1 1
+	translation	-4 5 -6
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					specularColor .29 .3 .29
+					ambientIntensity 0
+					shininess .08
+					transparency 0
+				}
+				texture	ImageTexture {
+				url	"https://www.pngkey.com/png/full/105-1058930_papel-picado-banner-png-papel-picado-dia-de.png"
+				}
+				
+			
+			}
+			geometry Box {
+			
+			}
+		}
+			
+	]
+}
+ Transform {
+	scale 0.1 1 1
+	translation	-4 7 -8
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					specularColor .29 .3 .29
+					ambientIntensity 0
+					shininess .08
+					transparency 0
+				}
+				texture	ImageTexture {
+				url	"https://www.pngkey.com/png/full/105-1058930_papel-picado-banner-png-papel-picado-dia-de.png"
+				}
+				
+			
+			}
+			geometry Box {
+			
+			}
+		}
+			
+	]
+}
+
+	]
+}
+
+Transform {
+	translation	8 0 0
+	children [
+	USE	papelPicado
+	]
+}
+
+
+
+#pan de muerto
+
+DEF	Bread Transform	{
+	translation	-1.5 -3 -2
+	children [
+	Transform {
+	scale 1 0.5 1
+	translation	0 5 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .95 .6 .2
+					specularColor .43 .14 0
+					ambientIntensity .123
+					shininess .83
+				}
+			
+			}
+			geometry Sphere	{
+			
+			}
+		}
+	]
+}
+Transform {
+	scale 0.3 0.3 0.3
+	translation	0 5.4 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .95 .6 .2
+					specularColor .43 .14 0
+					ambientIntensity .123
+					shininess .83
+				}
+			
+			}
+			geometry Sphere	{
+			
+			}
+		}
+	]
+}
+Transform {
+	scale 0.5 0.3 0.3
+	translation	-0.6 5.2 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .95 .6 .2
+					specularColor .43 .14 0
+					ambientIntensity .123
+					shininess .83
+				}
+			
+			}
+			geometry Sphere	{
+			
+			}
+		}
+	]
+}
+Transform {
+	scale 0.5 0.3 0.3
+	translation	0.6 5.2 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .95 .6 .2
+					specularColor .43 .14 0
+					ambientIntensity .123
+					shininess .83
+				}
+			
+			}
+			geometry Sphere	{
+			
+			}
+		}
+	]
+}
+Transform {
+	scale 0.3 0.3 0.3
+	translation	0 5.1 0.8
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .95 .6 .2
+					specularColor .43 .14 0
+					ambientIntensity .123
+					shininess .83
+				}
+			
+			}
+			geometry Sphere	{
+			
+			}
+		}
+	]
+}		 Transform {
+	scale 0.3 0.3 0.3
+	translation	0 5.1 -0.8
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .95 .6 .2
+					specularColor .43 .14 0
+					ambientIntensity .123
+					shininess .83
+				}
+			
+			}
+			geometry Sphere	{
+			
+			}
+		}
+	]
+}
+	]
+}
+
+
+Transform {
+	scale 1 1 1
+	translation	3 0 0
+	children [
+	USE	Bread
+	]
+}
+
+	Transform {
+	scale 1 1 1
+	translation	4 2 -2
+	children [
+	USE	Bread
+	]
+}
+
+	Transform {
+	scale 1 1 1
+	translation	-1 2 -2
+	children [
+	USE	Bread
+	]
+}
+
+
+##dulces
+
+DEF	 candy Transform {
+	translation	3 0 0
+	children [
+	
+Transform {
+	scale 0.2 0.1 0.1
+	translation	0 6.4 -6
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .15 .01
+					specularColor .19 .03 .03
+					ambientIntensity .0833
+					shininess .08
+				}
+			
+			}
+			geometry Sphere	{}
+		}
+	]
+}	Transform {
+	scale 0.2 0.1 0.1
+	translation	0.2 6.4 -6
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 .35 .25
+					specularColor 0 .16 .18
+					emissiveColor .27 .32 .46
+					ambientIntensity .0533
+					shininess .06
+				}
+			
+			
+			}
+			geometry Sphere	{}
+		}
+	]
+}	 	Transform {
+	scale 0.2 0.1 0.1
+	translation	0.4 6.4 -6
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .32 .2
+					specularColor .82 .28 .28
+					ambientIntensity .113
+					shininess .8
+				}
+			
+			
+			
+			}
+			geometry Sphere	{}
+		}
+	]
+}
+Transform {
+	scale 0.2 0.1 0.1
+	translation	-0.3 6.4 -6
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .88 .32 .2
+					specularColor .82 .28 .28
+					ambientIntensity .113
+					shininess .8
+				}
+			
+			
+			
+			}
+			geometry Sphere	{}
+		}
+	]
+}
+	Transform {
+	scale 0.2 0.1 0.1
+	translation	-0.2 6.4 -6
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 .35 .25
+					specularColor 0 .16 .18
+					emissiveColor .27 .32 .46
+					ambientIntensity .0533
+					shininess .06
+				}
+			
+			
+			}
+			geometry Sphere	{}
+		}
+	]
+}
+	]
+}
+Transform {
+	translation	-3 0 0
+	children [
+	USE	candy
+	]
+}
+Transform {
+	translation	-6 0 0
+	children [
+	USE	candy
+	]
+}
